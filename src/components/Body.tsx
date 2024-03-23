@@ -1,5 +1,4 @@
 import "./Body.css";
-import React from "react";
 import BodyNav from "./BodyNav";
 import Message from "./Message";
 

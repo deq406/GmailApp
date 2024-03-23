@@ -7,6 +7,7 @@
 .header__left {
   display: flex;
   align-items: center;
+  gap: 10px;
 }
 .header__left > img {
   object-fit: contain;
@@ -37,4 +38,8 @@
   display: flex;
   padding-right: 20px;
   align-items: center;
+}
+.h3Logo{
+  text-decoration: none;
+  color: black;
 }

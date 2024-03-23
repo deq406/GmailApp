@@ -1,0 +1,40 @@
+.single__message {
+  display: grid;
+  grid-template-columns: repeat(24, 1fr);
+  align-items: center;
+  cursor: pointer;
+  margin-bottom: 1px solid whitesmoke;
+}
+.single__message:hover {
+  box-shadow: 0px 5px 5px rgba(5, 2, 2, 0.2);
+}
+.one {
+  grid-column: 1/2;
+}
+.two {
+  grid-column: 2/3;
+}
+.three {
+  grid-column: 3/4;
+}
+
+.four {
+  grid-column: 4/8;
+  font-size: 15px;
+}
+.seven {
+  grid-column: 8/9;
+}
+.five {
+  grid-column: 9/19;
+  font-size: 17px;
+}
+.six {
+  grid-column: 19/24;
+  font-size: 15px;
+}
+@media (max-width: 800px){
+  .two,.three,.four,.six{
+    display:none;
+  }
+}

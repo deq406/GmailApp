@@ -1,0 +1,27 @@
+.login {
+  display: flex;
+  width: 100vw;
+  min-height: 100vh;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 30vw;
+  margin: 0 auto;
+  max-width: 800px;
+}
+.login img {
+  object-fit: contain;
+  height: 200px;
+}
+.login button {
+  color: #fff;
+  background: blue;
+  border-radius: 3px;
+  border: none;
+  text-transform: uppercase;
+  width: 360px;
+  padding: 10px;
+  font-size: 1.15rem;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+}

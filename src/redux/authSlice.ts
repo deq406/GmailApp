@@ -19,12 +19,11 @@ export const authSlice = createSlice({
   name: "auth",
   initialState: { user: null },
   reducers: {
-    userLogin: (state, action) => {
+    userLogin: (state) => {
       signInWithPopup(auth, provider)
         .then((result) => {
-          const credential = GoogleAuthProvider.credentialFromResult(result);
-          const token = credential?.accessToken;
-          // The signed-in user info.
+            GoogleAuthProvider.credentialFromResult(result);
+// The signed-in user info.
           const user = result.user;
           console.log(user);
         })

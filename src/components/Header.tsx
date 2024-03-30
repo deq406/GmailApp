@@ -1,4 +1,3 @@
-import React from "react";
 import "./Header.css";
 import { IconButton, Avatar } from "@mui/material";
 import MenuIcon from "@mui/icons-material/Menu";
@@ -7,6 +6,7 @@ import TuneIcon from "@mui/icons-material/Tune";
 import AppsIcon from "@mui/icons-material/Apps";
 import NotificationsIcon from "@mui/icons-material/Notifications";
 import SettingsIcon from "@mui/icons-material/Settings";
+import {Link} from "react-router-dom";
 
 const Header = () => {
   return (
@@ -15,10 +15,9 @@ const Header = () => {
         <IconButton>
           <MenuIcon />
         </IconButton>
-        <img
-          src="https://i.pinimg.com/originals/ae/47/fa/ae47fa9a8fd263aa364018517020552d.png"
-          alt="gmail logo"
-        />
+        <Link to={"/"}>
+          <h3 className="h3Logo">ФИТ 3-7-1</h3>
+        </Link>
       </div>
       <div className="header__middle">
         <SearchIcon />
